@@ -16,9 +16,9 @@ def clear():
 def print_nye_to_console():
     f = pyfiglet.Figlet(font=FRONT)
     clear()
-    for col in [Fore.RED, Fore.GREEN, Fore.BLUE, Fore.CYAN, Fore.YELLOW] * 2 + [Fore.WHITE]:
+    for col in [Fore.RED, Fore.GREEN, Fore.BLUE, Fore.CYAN, Fore.YELLOW] * 10 + [Fore.WHITE]:
         print(col + f.renderText(MSG))
-        time.sleep(0.5)
+        time.sleep(0.05)
         clear()
 
 
